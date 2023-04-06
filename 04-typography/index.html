@@ -5,26 +5,114 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;600&family=Tapestry&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          fontFamily: {
+            sans: ['ui-sans-serif', 'system-ui'],
+            serif: ['ui-serif', 'Georgia'],
+            mono: ['ui-monospace', 'SFMono-Regular'],
+            tapestry: ['tapestry', 'SFMono-Regular'],
+          },
+        },
+      };
+    </script>
     <title>Typography</title>
   </head>
   <body>
     <!-- Font Family -->
+    <div class="container shadow-lg mx-auto text-center my-4 py-2">
+      <h1 class="text-5xl">Font Family</h1>
+      <div class="font-sans">tailwind is awesome</div>
+      <div class="font-serif">tailwind is awesome</div>
+      <div class="font-tapestry">tailwind is awesome</div>
+    </div>
 
     <!-- Font Size -->
+    <div class="container shadow-lg mx-auto text-center my-4 py-2">
+      <h1 class="text-5xl">Font Size</h1>
+
+      <p class="text-x">tailwind is awesome</p>
+      <p class="text-sm">tailwind is awesome</p>
+      <p class="text-base">tailwind is awesome</p>
+      <p class="text-lg">tailwind is awesome</p>
+      <p class="text-xl">tailwind is awesome</p>
+      <p class="text-2xl">tailwind is awesome</p>
+      <p class="text-3xl">tailwind is awesome</p>
+    </div>
 
     <!-- Font Weight -->
+    <div class="container shadow-lg mx-auto text-center my-4 py-2">
+      <h1 class="text-5xl">Font Weight</h1>
+
+      <p class="font-light">tailwind is awesome</p>
+      <p class="font-normal">tailwind is awesome</p>
+      <p class="font-medium">tailwind is awesome</p>
+      <p class="font-semibold">tailwind is awesome</p>
+      <p class="font-bold">tailwind is awesome</p>
+    </div>
 
     <!-- Letter Spacing -->
+    <div class="container shadow-lg mx-auto text-center my-4 py-2">
+      <h1 class="text-5xl">Letter Spacing</h1>
+      <p class="">tailwind is awesome</p>
+      <p class="tracking-tight">tailwind is awesome</p>
+      <p class="tracking-normal">tailwind is awesome</p>
+      <p class="tracking-wide">tailwind is awesome</p>
+    </div>
 
     <!-- Text Alignment -->
+    <div class="container shadow-lg mx-auto text-center my-4 py-2">
+      <h1 class="text-5xl">Text Alignment</h1>
+      <p class="text-left">tailwind is awesome</p>
+      <p class="text-center">tailwind is awesome</p>
+      <p class="text-right">tailwind is awesome</p>
+    </div>
 
     <!-- Text Decoration -->
+    <div class="container shadow-lg mx-auto text-center my-4 py-2">
+      <h1 class="text-5xl">Text Decoration</h1>
+      <p class="underline decoration-4 decoration-blue-400">tailwind is awesome</p>
+      <p class="underline decoration-4 decoration-blue-400 underline-offset-8">
+        tailwind is awesome
+      </p>
+      <p class="underline decoration-double">tailwind is awesome</p>
+      <p class="underline decoration-dotted">tailwind is awesome</p>
+      <p class="underline decoration-dash">tailwind is awesome</p>
+      <p class="underline decoration-waby">tailwind is awesome</p>
+    </div>
 
     <!-- Decoration Style -->
+    <div class="container shadow-lg mx-auto text-center my-4 py-2">
+      <h1 class="text-5xl">Decoration Style</h1>
+      <p class="underline decoration-double">tailwind is awesome</p>
+      <p class="underline decoration-dotted">tailwind is awesome</p>
+      <p class="underline decoration-dash">tailwind is awesome</p>
+      <p class="underline decoration-waby">tailwind is awesome</p>
+    </div>
 
     <!-- Decoration Offset -->
+    <div class="container shadow-lg mx-auto text-center my-4 py-2">
+      <h1 class="text-5xl">Decoration Offset</h1>
+      <p class="underline decoration-4 decoration-blue-400 underline-offset-8">
+        tailwind is awesome
+      </p>
+    </div>
 
     <!-- Text Transform -->
+    <div class="container shadow-lg mx-auto text-center my-4 py-2">
+      <h1 class="text-5xl">Text Transform</h1>
+      <p class="normal-case">Tailwind is awesome</p>
+      <p class="uppercase">Tailwind is awesome</p>
+      <p class="lowercase">Tailwind is awesome</p>
+      <p class="capitalize">Tailwind is awesome</p>
+    </div>
   </body>
 </html>
 
